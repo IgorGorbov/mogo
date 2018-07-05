@@ -1,0 +1,407 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+  .sec-about
+    &-footer
+      &-item
+        flex-basis: 190px
+        padding:
+          top: 70px
+          bottom: 70px
+          left: 35px
+          right: 35px
+        span
+          font-size: 72px
+        p
+          font-size: 14px
+
+  .sec-about
+    &-services
+      justify-content: center
+      &-item
+        border-bottom: 2px solid #e5e5e5
+
+  .sec-about.design
+    img.tab
+      width: 40%
+      max-width: 480px
+    img.phone
+      max-width: 200px
+      width: 17%
+      bottom: -70px
+      left: 59%
+
+  .sec-about.wedo
+    margin-bottom: 80px
+    .sec-about-header
+      margin-bottom: 30px
+    .sec-about-content
+      padding:
+        left: 50px
+        right: 50px
+
+  .footer
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    padding:
+      left: 100px
+      right: 100px
+    &__description
+      width: 100%
+      margin:
+        left: auto
+        right: auto
+    &__blogs
+      flex-grow: 0
+      width: 40%
+      margin:
+        left: 20px
+        right: 20px
+    .footer__instagram
+      width: 50%
+      img
+        margin:
+          left: 0
+          right: 3px
+          bottom: 3px
+        &:nth-child(3n+1)
+          margin-right: 3px
+
+// ≥992px
++media-breakpoint-down(md)
+  .top-section
+    &-banner
+      &::before
+        top: 36vw
+  .sec-about
+    &-header
+      padding-top: 60px
+      h3
+        margin-top: 10px
+      p
+        margin-top: 65px
+      &::before
+        top: 180px
+    &-team
+      margin-top: 0
+      flex-wrap: wrap
+      &-item
+        width: 60%
+        margin:
+          top: 20px
+          left: 0
+          right: 0
+          bottom: 0
+
+    &-footer
+      margin-top: 40px
+      &-item
+        flex-basis: 110px
+        padding:
+          top: 60px
+          bottom: 60px
+          left: 20px
+          right: 20px
+        span
+          font-size: 65px
+        p
+          font-size: 13px
+
+  .sec-about
+    &-services
+      &-item
+        border-bottom: 2px solid #e5e5e5
+
+  .sec-about.design
+    img.tab
+      width: 48%
+      max-width: 480px
+    img.phone
+      max-width: 200px
+      width: 19%
+      bottom: -70px
+      left: 61%
+
+  .sec-about.wedo
+    margin-bottom: 60px
+    .sec-about-header
+      margin-bottom: 30px
+    .sec-about-content
+      padding:
+        left: 20px
+        right: 20px
+      &-img
+        margin-right: 15px
+      &-accordion
+        flex-basis: 600px
+        max-width: 600px
+        overflow: hidden
+        &-item
+          &-header
+            padding: 15px 10px
+            border: 1px solid #eee
+            cursor: pointer
+            font-size: 14px
+            &-pic
+              margin-right: 18px
+
+
+  .footer
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    padding:
+      left: 50px
+      right: 50px
+    &__description
+      width: 100%
+      margin:
+        left: auto
+        right: auto
+      .followers
+        .soc
+          margin-bottom: 25px
+        input[type="text"]
+          margin-bottom: 30px
+        input[type="submit"]
+          margin:
+            left: auto
+            right: auto
+    &__blogs
+      margin:
+        top: 35px
+        bottom: 0
+        left: 10px
+        right: 10px
+      width: 100%
+      h2
+        margin-bottom: 20px
+    .footer__instagram
+      width: 100%
+      img
+        width: 130px
+        height: auto
+        margin:
+          left: 0
+          right: 3px
+          bottom: 3px
+        &:nth-child(3n+1)
+          margin-right: 3px
+
+// ≥768px
++media-breakpoint-down(sm)
+  .top-section
+    &-header
+      &-logo
+        display: block
+        margin:
+          left: auto
+          right: auto
+    &-banner
+      &::before
+        top: 38vw
+    &-footer
+      &-items
+        padding: 42px 0
+        &-item
+          margin-left: 15px
+          .category
+            p
+              font-size: 16px
+              margin-left: 3px
+              span
+                font-size: 22px
+  .sec-about
+    &-footer
+      margin-top: 40px
+      &-item
+        margin:
+          top: 3px
+          bottom: 3px
+        border: 1px solid rgba(255, 255, 255, 0.3)
+        flex-basis: 300px
+        padding:
+          top: 60px
+          bottom: 60px
+          left: 20px
+          right: 20px
+        span
+          font-size: 65px
+        p
+          font-size: 13px
+
+  .sec-about.design
+    img.tab
+      width: 67%
+      max-width: 480px
+    img.phone
+      max-width: 200px
+      width: 27%
+      bottom: -70px
+      left: 65%
+
+  .sec-about.wedo
+    margin-bottom: 40px
+    .sec-about-header
+      margin-bottom: 20px
+    .sec-about-content
+      flex-wrap: wrap
+      justify-content: center
+      padding:
+        left: 20px
+        right: 20px
+      &-img
+        margin-bottom: 20px
+        margin-right: 0
+      &-accordion
+        flex-basis: 700px
+        max-width: 700px
+        overflow: hidden
+        &-item
+          &-header
+            padding: 15px 10px
+            border: 1px solid #eee
+            cursor: pointer
+            font-size: 14px
+            &-pic
+              margin-right: 18px
+
+  .footer
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    padding:
+      left: 20px
+      right: 20px
+    &__description
+      width: 100%
+      margin:
+        left: auto
+        right: auto
+      .followers
+        .soc
+          margin-bottom: 25px
+        input[type="text"]
+          width: 80%
+          margin-bottom: 30px
+        input[type="submit"]
+          width: 80%
+          margin:
+            left: auto
+            right: auto
+    &__blogs
+      margin:
+        top: 35px
+        bottom: 0
+        left: 10px
+        right: 10px
+      width: 100%
+      h2
+        margin-bottom: 20px
+    .footer__instagram
+      width: 100%
+      img
+        width: 130px
+        height: auto
+        margin:
+          left: 0
+          right: 3px
+          bottom: 3px
+        &:nth-child(3n+1)
+          margin-right: 3px
+
+// ≥576px
++media-breakpoint-down(xs)
+  .top-section
+    &-header
+      &-logo
+        font-size: 26px
+        display: block
+        margin:
+          left: auto
+          right: auto
+
+      &-menu
+        ul
+          font-size: 14px
+          line-height: 1.3
+          li
+            margin:
+              top: 18px
+              left: 15px
+              right: 15px
+              bottom: 0
+            &:last-child
+              margin:
+                left: 15px
+                right: 15px
+    &-banner
+      &::before
+        top: 42vw
+    &-footer
+      margin-top: 25px
+      &-items
+        padding: 42px 0
+        &-item
+          margin-left: 10px
+          .category
+            p
+              font-size: 12px
+              margin-left: 3px
+              span
+                font-size: 16px
+
+  .sec-about
+    &-header
+      padding-top: 20px
+      h2
+        margin-top: 10px
+      h3
+        margin-top: 20px
+      p
+        margin-top: 25px
+      &::before
+        top: 140px
+
+  .sec-about-team
+    margin-top: 0
+    flex-wrap: wrap
+    &-item
+      &:first-child
+        margin-top: 10px
+      width: 70%
+      margin:
+        top: 20px
+        left: 0
+        right: 0
+        bottom: 0
+
+  .sec-about.design
+    img.tab
+      width: 94%
+      max-width: 480px
+    img.phone
+      max-width: 200px
+      width: 35%
+      bottom: -45px
+      left: 67%
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)

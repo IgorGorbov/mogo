@@ -1,0 +1,148 @@
+.top-section
+  position: relative
+  width: 100vw
+  height: auto
+  background: linear-gradient(0deg, rgba(252,227,138,0.9), rgba(243,129,129,0.9) 100%), url("../img/sec-banner.jpg") no-repeat center
+  background-size: cover
+  &-header
+    display: flex
+    flex-wrap: wrap
+    max-width: 1200px
+    justify-content: space-between
+    align-items: baseline
+    margin: 0 auto 0 auto
+    &-logo
+      font-size: 30px
+      font-weight: 800
+      line-height: 1.2
+      margin-left: 10px
+      a
+        color: #fff
+        text-decoration: none
+    &-menu
+      ul
+        display: flex
+        flex-wrap: wrap
+        list-style-type: none
+        font-size: 14px
+        line-height: 1.5
+        li
+          text-transform: uppercase
+          margin:
+            top: 20px
+            left: 25px
+            right: 25px
+            bottom: 0
+          &:last-child
+            margin:
+              left: 15px
+              right: 10px
+          a
+            color: #fff
+            text-decoration: none
+            transition: color .25s ease, border-bottom .2s ease
+            padding-bottom: 6px
+            i
+              font-size: 16px
+              vertical-align: top
+            &:hover
+              color: $yellow
+              border-bottom: 3px solid $yellow
+
+  &-banner
+    display: flex
+    position: relative
+    flex-direction: column
+    flex-wrap: wrap
+    align-items: center
+    margin-top: 50px
+    h1
+      font-size: 5vw
+      font-family: "kaushan", sans-serif
+      color: #fff
+      line-height: 1.2
+    p
+      margin-top: 30px
+      font-size: 10vw
+      font-family: "montserrat", sans-serif
+      color: #fff
+      font-weight: bold
+      text-transform: uppercase
+      line-height: 0.933
+      text-align: center
+    &::before
+      content: ''
+      display: block
+      width: 60px
+      border-top: 4px solid #fff
+      position: absolute
+      left: auto
+      top: 32vw
+      z-index: 5
+
+  &-learn-more
+    display: block
+    width: 164px
+    height: 44px
+    border: 3px solid #fff
+    background-color: rgba(0, 0, 0, 0)
+    text-transform: uppercase
+    text-align: center
+    color: #fff
+    padding: 10px 20px
+    line-height: 1.2
+    transition: color .35s ease, border-color .35s ease
+    margin:
+      top: 100px
+      right: auto
+      left: auto
+      bottom: 0
+    &:hover
+      text-decoration: none
+      color: $yellow
+      border-color: $yellow
+
+  &-footer
+    margin-top: 40px
+    &-items
+      display: flex
+      flex-wrap: nowrap
+      justify-content: center
+      width: 100%
+      padding: 45px 30px
+      &-item
+        margin-left: 30px
+        background-color: #fff
+        height: 3px
+        opacity: 0.5
+        width: 20%
+        &:first-child
+          margin-left: 0
+        .category
+          p
+            display: inline-block
+            font-size: 18px
+            font-family: "montserrat", sans-serif
+            color: #fff
+            text-transform: uppercase
+            text-align: left
+            margin-left: 3px
+            opacity: 0.75
+            span
+              font-size: 24px
+              font-family: "montserrat", sans-serif
+              color: #fff
+              font-weight: bold
+              text-transform: uppercase
+              text-align: left
+              opacity: 0.75
+
+
+.footer-item-active
+  background: linear-gradient(90deg, $red 30%, #fff 30%)
+  opacity: 1
+  .category
+    p
+      opacity: 1
+      span
+        opacity: 1
